@@ -142,7 +142,11 @@
                     <api_hoster>app.jelastic.servint.net</api_hoster>
                 </configuration>
             </plugin>
-       
+
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
                 <plugin>
                     <groupId>org.easyb</groupId>
                     <artifactId>maven-easyb-plugin</artifactId>
@@ -155,13 +159,14 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <storyType>html</storyType>                         
+                        <storyType>html</storyType>                         l
                         <storyReport>${basedir}/target/easyb/easyb-report.html
                         </storyReport>
                     </configuration>
                 </plugin>
 
             </plugins>
+        </pluginManagement>
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
